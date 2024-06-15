@@ -1,0 +1,12 @@
+.utility-bar {
+    padding: 0 35%;
+    height: 20px;
+    background: #8b95c9;
+    color: #e6e8da;
+    font-size: small;
+    font-weight: 700;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    justify-items: center;
+}
