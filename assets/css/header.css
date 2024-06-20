@@ -1,12 +1,10 @@
 .header {
-    background-image: url('/assets/img/header-yena.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* filter: brightness(0.5); */
-    height: 488px;
+    height: 540px;
 }
 .header__info {
+    position: relative;
+    top: -55px;
+    z-index: -1;
     display: grid;
     grid-template-columns: 1fr;
     text-align: center;
@@ -16,14 +14,8 @@
     font-weight: 900;
 }
 .header__info a {
-    /* font-family: "Hipnouma", sans-serif; */
     color: #e6e8da;
     text-decoration: underline;
     justify-self: center;
     align-self: center;
-    transition: all .7s;
-}
-.header__info a:hover {
-    color: #ff4372;
-    font-size: 90px;
 }

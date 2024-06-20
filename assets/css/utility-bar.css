@@ -1,7 +1,7 @@
 .utility-bar {
     padding: 0 35%;
     height: 20px;
-    background: #8b95c9;
+    background: #ff4372;
     color: #e6e8da;
     font-size: small;
     font-weight: 700;
@@ -9,4 +9,24 @@
     grid-template-columns: 1fr;
     align-content: center;
     justify-items: center;
+
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.utility-bar__text {
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    animation: marquee linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -100%;
+    }
 }

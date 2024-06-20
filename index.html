@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="./assets/css/utility-bar.css">
     <link rel="stylesheet" href="./assets/css/navbar.css">
     <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/cards.css">
+    <link rel="stylesheet" href="./assets/css/sales.css">
+    <link rel="stylesheet" href="./assets/css/suscribe.css">
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,82 +29,216 @@
         <!-- utility bar -->
         <section class="utility-bar">
             <div>
-                <p>&#8902&#729⟡ Env&#237os gratis por compras superiores a $150.000 ⟡&#729&#8902</p>
+                <p class="utility-bar__text">
+                    &nbsp;&nbsp; &#8902&#729⟡ &nbsp;&nbsp;
+                    Env&#237os gratis a todo el pa&#237s por compras superiores a $150.000
+                    &nbsp;&nbsp; ⟡&#729&#8902 &nbsp;&nbsp;
+                </p>
             </div>
         </section>
 
-    <!-- navbar -->
-    <nav class="navbar">
-        <div class="navbar__icon">
-            <a href="#"><img src="./assets/img/icon-wb.png" alt="pixel-pink"></a>
-        </div>
-        <div class="navbar__menu">
-            <div id="menu">
+    <!-- navbar y header -->
+    <section class="header">
+        <nav class="navbar">
+            <div class="navbar__icon">
+                <a href="#"><img src="./assets/img/icon-wb.png" alt="pixel-pink"></a>
+            </div>
+            <div class="navbar__menu">
+                <div id="menu">
+                    <ul>
+                        <li>
+                            <a href="#">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#">Categorías</a>
+                        </li>
+                        <li>
+                            <a href="#">Ultima colección</a>
+                        </li>
+                        <li>
+                            <a href="#">Preventa</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar__buttons">
                 <ul>
                     <li>
-                        <a href="#">Inicio</a>
+                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
                     </li>
                     <li>
-                        <a href="#">Ropa</a>
+                        <a href="#"><i class="fa-solid fa-user"></i></a>
                     </li>
                     <li>
-                        <a href="#">Accesorios</a>
-                    </li>
-                    <li>
-                        <a href="#">Ultima colección</a>
-                    </li>
-                    <li>
-                        <a href="#">Preventa</a>
+                        <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
                     </li>
                 </ul>
             </div>
-        </div>
-        <div class="navbar__buttons">
-            <ul>
-                <li>
-                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa-solid fa-user"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- header -->
-    <section class="header">
+        </nav>
         <div  class="header__info">
-            <a href="#"">New collection</a>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="./assets/img/header-yena-1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./assets/img/header-yena-2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./assets/img/header-yena-3.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
     </section>
 
     <!-- cards -->
-    <section class="row">
-        <div>
+    <section class="cards" id="card-section">
+        <div class="cards__title">
             <h2>
-                Let's play
+                Let's play ⟡&#729&#8902
             </h2>
-            <a href="">
-                Ver todos los productos
-            </a>
+            <div class="cards__subtitle">
+                <a href="#card-section">
+                    Ver todos los productos
+                </a>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
         </div>
-        <div>
-            <img src="" alt="">
-        </div>
-        <div>
-            <a href="">
-
-            </a>
-            <p>
-                
-            </p>
+        <div class="d-flex justify-content-evenly">
+            <div class="card">
+                <div>
+                    <img src="./assets/img/cards/black-jean-skirt.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-body__info">
+                            <a href="#">Falda denim asimetric</a>
+                            <p>$60.000</p>
+                        </div>
+                        <div class="card-body__tag">
+                            <button>
+                                <i class="fa-solid fa-tag fa-rotate-90"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img src="./assets/img/cards/black-star-sweater.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-body__info">
+                            <a href="#">Hoodie pink star</a>
+                            <p>$85.000</p>
+                        </div>
+                        <div class="card-body__tag">
+                            <button>
+                                <i class="fa-solid fa-tag fa-rotate-90"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img src="./assets/img/cards/brown-coquette-sweater.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-body__info">
+                            <a href="#">Sweater lana cozy bear</a>
+                            <p>$120.000</p>
+                        </div>
+                        <div class="card-body__tag">
+                            <button>
+                                <i class="fa-solid fa-tag fa-rotate-90"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img src="./assets/img/cards/pink-black-dress-goth.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-body__info">
+                            <a href="#">Vestido pink goth</a>
+                            <p>$115.000</p>
+                        </div>
+                        <div class="card-body__tag">
+                            <button>
+                                <i class="fa-solid fa-tag fa-rotate-90"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img src="./assets/img/cards/pink-sweater-goth.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-body__info">
+                            <a href="#">Hoodie pink goth</a>
+                            <p>$80.000</p>
+                        </div>
+                        <div class="card-body__tag">
+                            <button>
+                                <i class="fa-solid fa-tag fa-rotate-90"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- sales -->
+    <section class="sales">
+        <div>
+            <a href=""></a>
+        </div>
+    </section>
+
+    <!-- suscribe -->
+    <section class="suscribe">
+        <div class="suscribe__number">
+            <h2>
+                10%
+            </h2>
+            <img src="./assets/img/icon-sided.png" alt="">
+        </div>
+        <div class="suscribe__info">
+            <svg width="10" height="90%" xmlns="http://www.w3.org/2000/svg">
+                <line x1="5" y1="0" x2="5" y2="100%" stroke="#e6e8da" stroke-width="2" stroke-dasharray="11" />
+            </svg>
+            <h3>
+                Suscríbete, entérate y obten un descuento en tu compra.
+            </h3>
+            <form action="">
+                <input type="text" name="" id="" placeholder="Ingresa tu nombre">
+                <input type="email" name="" id="" placeholder="Ingresa tu email">
+                <button type="submit"><i class="fa-solid fa-angle-right"></i></button>
+            </form>
+            <p>
+                Al dar click en suscribir estas aceptando nuestras nuestras politicas y Terminos y condiciones
+            </p>
+            <span>
+                Todos los derechos reservados. @2024, Pixel-pink
+            </span>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./assets/js/utility-bar.js"></script>
 </body>
 </html>

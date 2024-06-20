@@ -1,12 +1,10 @@
 .navbar {
     height: 55px;
-    background: #e6e8da;
+    background: transparent;
     display: grid;
     grid-template-columns: .5fr 1fr .5fr;
     align-items: center;
     padding: 0 10%;
-    /* border-bottom: 1px solid #ff437275;
-    box-shadow: 0 0px 5px -5px #ff4372, 0 5px 15px -11px #ff4372; */
 }
 
 .navbar img {
@@ -21,11 +19,11 @@
 }
 .navbar a {
     text-decoration: none;
-    color: #ff4372;
+    color: #e6e8da;
     margin: 0 15px;
 }
 .navbar a:hover {
-    color: #8b95c9;
+    color: #ff4372;
 }
 
 
