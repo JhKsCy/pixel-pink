@@ -1,0 +1,48 @@
+.about-us {
+    display: grid;
+    grid-template-columns: 1fr 1.8fr;
+    margin: 30px 12%;
+}
+.about-us__img {
+    height: 480px;
+    justify-self: center;
+    align-content: center;
+}
+.about-us__img img {
+    height: 90%;
+    border-radius: 5px;
+}
+.about-us__info {
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    color: #e6e8da;
+    padding-left: 20px;
+    margin-top: 17px;
+}
+.about-us__info h2 {
+    font-family: "Anton", sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.about-us__info p {
+    font-size: 14px;
+}
+.about-us__social {
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+}
+.about-us__social button {
+    height: 50px;
+    width: 50px;
+    margin-right: 13px;
+    padding: 9px;
+    border: none;
+    border-radius: 100px;
+    color: #e6e8da;
+    background: #ff4372;
+}
+.about-us__social button:hover {
+    color: #ff4372;
+    background: #e6e8da;
+}
