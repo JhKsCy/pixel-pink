@@ -1,10 +1,14 @@
 .about-us {
     display: grid;
-    grid-template-columns: 1fr 1.8fr;
-    margin: 30px 12%;
+    grid-template-columns: 1.5fr 2fr;
+    margin: 20px 10%;
+    padding: 3% 2%;
+    background: #e6e8da;
+    border: 1px solid #ff4372;
+    border-radius: 10px;
 }
 .about-us__img {
-    height: 480px;
+    height: 500px;
     justify-self: center;
     align-content: center;
 }
@@ -15,17 +19,27 @@
 .about-us__info {
     display: grid;
     grid-template-rows: 1fr 2fr 1fr;
-    color: #e6e8da;
-    padding-left: 20px;
+    color: black;
+    padding: 0 8% 0 2%;
     margin-top: 17px;
+    text-align: justify;
 }
 .about-us__info h2 {
     font-family: "Anton", sans-serif;
-    font-size: 50px;
+    font-size: xxx-large;
     text-transform: uppercase;
 }
+.about-us__info span {
+    font-weight: 600;
+    color: #ff4372;
+    font-size: 15px;
+}
+.about-us__info h4 {
+    font-size: 18px;
+}
 .about-us__info p {
-    font-size: 14px;
+    padding-top: 10px;
+    font-size: 15px;
 }
 .about-us__social {
     display: flex;

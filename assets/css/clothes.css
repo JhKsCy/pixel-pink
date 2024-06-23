@@ -1,6 +1,6 @@
 .clothe-card {
     background: #e6e8da;
-    margin: 20px 3%;
+    margin: 20px 10%;
     border: 1px solid #ff4372;
     border-radius: 10px;
     height: 620px;
@@ -10,9 +10,14 @@
 .clothe-card__slide {
     align-content: center;
     justify-self: center;
+    text-align: -webkit-center;
 }
 .clothe-card__slide img {
     height: 500px;
+}
+.clothe-card__slide i {
+    color: #ff4372;
+    font-size: xx-large;
 }
 .clothe-card__slide p {
     text-transform: uppercase;
@@ -86,6 +91,9 @@
     display: flex;
     gap: 10px;
 }
+.clothe-card__info-cart span {
+    font-size: small;
+}
 .clothe-card__info-cart button {
     margin-top: 5px;
     background-color: #e6e8da;
@@ -108,7 +116,6 @@
     background-color: #ff4372;
     color: #e6e8da;
 }
-
 .clothe-card__info-description {
     text-align: justify;
     margin-top: 30px;
@@ -119,4 +126,10 @@
 .clothe-card__info-description p {
     padding-top: 10px;
     font-size: 15px;
+}
+.half-carousel {
+    width: 400px;
+}
+.carousel-inner {
+    width: 80%;
 }

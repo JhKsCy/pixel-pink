@@ -69,3 +69,6 @@
 .sing-up__logos i {
     margin: 0 20px;
 }
+.sing-up__logos a {
+    color: #333;
+}

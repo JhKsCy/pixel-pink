@@ -1,12 +1,11 @@
 .navbar {
     height: 55px;
-    background: transparent;
     display: grid;
     grid-template-columns: .5fr 1fr .5fr;
     align-items: center;
     padding: 0 10%;
+    z-index: 1;
 }
-
 .navbar img {
     height: 36px;
     cursor: pointer;
@@ -25,8 +24,6 @@
 .navbar a:hover {
     color: #ff4372;
 }
-
-
 .navbar__icon {
     justify-self: start;
     align-self: center;

@@ -4,7 +4,6 @@
 .header__info {
     position: relative;
     top: -55px;
-    z-index: -1;
     display: grid;
     grid-template-columns: 1fr;
     text-align: center;
@@ -18,4 +17,22 @@
     text-decoration: underline;
     justify-self: center;
     align-self: center;
+}
+.header__carrousel button {
+    width: 10%;
+}
+.carousel {
+    height: 100%;
+    overflow: hidden;
+}
+.carousel-inner {
+    height: 100%;
+}
+.carousel-item {
+    height: 100%;
+}
+.carousel-item img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
 }

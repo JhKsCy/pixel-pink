@@ -9,3 +9,12 @@ buttons.forEach(button => {
         button.classList.add('selected');
     });
 });
+
+let quantity = 0;
+
+function changeQuantity(amount) {
+    if (quantity + amount >= 0) {
+        quantity += amount;
+        document.getElementById('quantity').textContent = quantity;
+    }
+}

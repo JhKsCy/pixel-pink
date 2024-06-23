@@ -71,11 +71,10 @@
     position: absolute;
     top: -4px;
     right: 15%;
-    transition: all .2s;
+    transition: all .1s;
 }
 .suscribe__info button:hover {
-    font-size: 35px;
-    top: -6px;
+    color: black;
 }
 .suscribe__info p {
     position: relative;

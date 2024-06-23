@@ -2,9 +2,37 @@
     height: 550px;
     width: 90%;
     margin: 100px 5%;
+    padding: 1.5%;
     background-image: url(/assets/img/promotion-banner.png);
     border-radius: 20px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: 1fr;
+    align-items: end;
+    justify-content: end;
+}
+.sales__star-button {
+    height: 180px;
+    width: 180px;
+    background: transparent;
+    border: none; 
+    cursor: pointer; 
+    transition: all .2s;
+}
+.sales__star-button:hover {
+    transform: scale(1.15);
+}
+.sales__star-button img {
+    height: 100%;
+}
+.sales__star-button p {
+    position: relative;
+    top: -70%;
+    right: -1%;
+    rotate: -10deg;
+    font-family: "Anton", sans-serif;
+    font-size: xxx-large;
+    color: #e6e8da;
 }
