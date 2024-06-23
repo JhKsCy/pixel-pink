@@ -31,9 +31,14 @@
     background: #e6e8da;
     border: 1px solid #ff4372;
     border-radius: 5px;
+    transition: all .3s;
+}
+.card:hover {
+    transform: scale(1.05);
 }
 .card img {
     padding: 10px;
+    transition: opacity 1s;
 }
 .card-body {
     display: grid;

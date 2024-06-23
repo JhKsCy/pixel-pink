@@ -23,6 +23,21 @@
     <title>Pixel Pink &#x2661</title>
     <meta name="description" content="¡Vive con estilo y juega con pasión!">
     <link rel="icon" href="../img/icon-wb.png" type="image/png">
+
+    <style>
+        .carousel-slide {
+            text-align: -webkit-center;
+        }
+        .half-carousel {
+            width: 400px;
+        }
+        .half-carousel img {
+            width: 350px;
+        }
+        .carousel-inner {
+            width: 80%;
+        }
+    </style>
 </head>
 <body>
     <!-- utility bar -->
@@ -79,7 +94,29 @@
     <!-- clothes -->
     <section class="clothe-card">
         <div class="clothe-card__slide">
-            <img src="../img/cards/black-star-sweater.png" alt="">
+            <div class="half-carousel">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../img/cards/black-jean-skirt.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/cards/black-star-sweater.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/cards/brown-coquette-sweater.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
             <p>
                 Envío gratis por compras superiores a 150.000
             </p>
@@ -221,54 +258,12 @@
     </section>
 
     <!-- footer -->
-    <footer class="footer">
-        <div class="footer__icon">
-            <img src="../img/icon-wb.png" alt="">
-        </div>
-        <div>
-            <h4>
-                Contáctanos
-            </h4>
-            <ul>
-                <li>+57 3239068680</li>
-                <li>soporte@pixel-pink.co</li>
-                <li>Cra 19 #70a - 58</li>
-            </ul>
-        </div>
-        <div>
-            <h4>
-                Conócenos
-            </h4>
-            <ul>
-                <li><a href="">
-                    Nuestra historia
-                </a></li>
-                <li><a href="">
-                    Deskarito
-                </a></li>
-                <li><a href="">
-                    MrsParkDo
-                </a></li>
-            </ul>
-        </div>
-        <div class="footer__social">
-            <a href="">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="">
-                <i class="fa-brands fa-tiktok"></i>
-            </a>
-            <a href="">
-                <i class="fa-brands fa-discord"></i>
-            </a>
-        </div>
+    <footer id="footer">
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="../js/utility-bar.js"></script>
     <script src="../js/clothes.js"></script>
+    <script src="../js/html-insert.js"></script>
 </body>
 </html>
