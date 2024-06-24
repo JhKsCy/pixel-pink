@@ -38,41 +38,7 @@
 
     <!-- navbar -->
     <section class="header">
-        <nav class="navbar">
-            <div class="navbar__icon">
-                <a href="#"><img src="../img/icon-wb.png" alt="pixel-pink"></a>
-            </div>
-            <div class="navbar__menu">
-                <div id="menu">
-                    <ul>
-                        <li>
-                            <a href="#">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="#">Categorías</a>
-                        </li>
-                        <li>
-                            <a href="#">Ultima colección</a>
-                        </li>
-                        <li>
-                            <a href="#">Preventa</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="navbar__buttons">
-                <ul>
-                    <li>
-                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa-solid fa-user"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
-                    </li>
-                </ul>
-            </div>
+        <nav class="navbar" id="navbar__container">
         </nav>
     </section>
 
@@ -95,9 +61,10 @@
                     Sobre mi:
                 </h4>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, velit? Distinctio veritatis quod at minima dolorum consectetur itaque tempora natus nisi ex repudiandae aut similique, repellat, commodi eveniet, quaerat eum!
+                    Tengo 24 años, soy diseñadora y creadora de contenido en redes sociales. Me considero a mi misma una persona proactiva, amante del gaming y la moda oriental.
                     <br>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum repudiandae aliquam officiis aspernatur quod optio officia, quaerat, temporibus expedita cum consequuntur tenetur iure provident, voluptatum quibusdam veniam obcaecati. Blanditiis, ea?
+                    <br>
+                    Es por esto que junto a mi mejor amiga fundamos Pixel Pink, con la visión de llenar un vacío en el mercado textíl para poder expresar nuestra afición por los videojuegos a través de la ropa y los accesorios, manteniendo la comodidad y el estilo Y2K.
                 </p>
             </div>
             <div class="about-us__social">
@@ -130,87 +97,8 @@
                 <i class="fa-solid fa-arrow-right"></i>
             </div>
         </div>
-        <div class="d-flex justify-content-evenly">
-            <div class="card">
-                <div>
-                    <img src="../img/cards/chick-collection/asimetric-skirt/as-1.png" class="card-img-top first-image-1" alt="asimetric-skirt">
-                    <div class="card-body">
-                        <div class="card-body__info">
-                            <a href="#">Falda denim asimetric</a>
-                            <p>$60.000</p>
-                        </div>
-                        <div class="card-body__tag">
-                            <button>
-                                <i class="fa-solid fa-tag fa-rotate-90"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div>
-                    <img src="../img/cards/pink-goth-collection/sweater-pink-star/ps-1.png" class="card-img-top" alt="pink-hoodie">
-                    <div class="card-body">
-                        <div class="card-body__info">
-                            <a href="#">Hoodie pink star</a>
-                            <p>$85.000</p>
-                        </div>
-                        <div class="card-body__tag">
-                            <button>
-                                <i class="fa-solid fa-tag fa-rotate-90"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div>
-                    <img src="../img/cards/cozy-collection/sweater-schoolar/gs-1.png" class="card-img-top" alt="sweater-gris">
-                    <div class="card-body">
-                        <div class="card-body__info">
-                            <a href="#">Sweater cozy scholar</a>
-                            <p>$120.000</p>
-                        </div>
-                        <div class="card-body__tag">
-                            <button>
-                                <i class="fa-solid fa-tag fa-rotate-90"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div>
-                    <img src="../img/cards/pink-goth-collection/dress-squares-pink/sdp-1.png" class="card-img-top" alt="vestido-cuadros">
-                    <div class="card-body">
-                        <div class="card-body__info">
-                            <a href="#">Vestido pink goth</a>
-                            <p>$115.000</p>
-                        </div>
-                        <div class="card-body__tag">
-                            <button>
-                                <i class="fa-solid fa-tag fa-rotate-90"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div>
-                    <img src="../img/cards/pink-goth-collection/sweater-first-love/flp-1.png" class="card-img-top" alt="sweater-rosa">
-                    <div class="card-body">
-                        <div class="card-body__info">
-                            <a href="#">Sweater pink goth</a>
-                            <p>$80.000</p>
-                        </div>
-                        <div class="card-body__tag">
-                            <button>
-                                <i class="fa-solid fa-tag fa-rotate-90"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="d-flex justify-content-evenly" id="cards__container">
+            
         </div>
     </section>
 
@@ -219,7 +107,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../js/pages/html-insert.js"></script>
     <script src="../js/utility-bar.js"></script>
-    <script src="../js/html-insert.js"></script>
+    <script src="../js/pages/cards.js"></script>
 </body>
 </html>
