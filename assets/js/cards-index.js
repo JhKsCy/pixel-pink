@@ -61,12 +61,12 @@ function cardsGenerate() {
             <img src="./assets${datos.image}" class="card-img-top first-image-1" alt="${datos.alternative}">
             <div class="card-body">
                 <div class="card-body__info">
-                    <a href="./assets/pages/clothes.html" target="_blank">${datos.title}</a>
+                    <a href="./assets/pages/clothes.html" class="btn-view" data-id=${datos.id} target="_blank">${datos.title}</a>
                     <p>$${datos.price}</p>
                 </div>
                 <div class="card-body__tag">
-                    <button class="btn-view" data-id=${datos.id}>
-                        <i class="fa-solid fa-tag fa-rotate-90"></i>
+                    <button class="btn-view" data-id=${datos.id} onclick="window.open('./assets/pages/clothes.html', '_blank')">
+                        <i class="fa-solid fa-tag fa-rotate-90 btn-view" data-id=${datos.id}></i>
                     </button>
                 </div>
             </div>
@@ -87,8 +87,6 @@ function cardsGenerate() {
         })
     })
 }
-
-
 
 cardsGenerate();
 

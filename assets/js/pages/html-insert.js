@@ -2,13 +2,13 @@ function addHTMLNavbar() {
     var navbar = document.getElementById("navbar__container");
     var contentHTML = `
         <div class="navbar__icon">
-            <a href="../../index.html" target="_blank"><img src="../img/icon-wb.png" alt="pixel-pink"></a>
+            <a href="../../index.html"><img src="../img/icon-wb.png" alt="pixel-pink"></a>
         </div>
         <div class="navbar__menu">
             <div id="menu">
                 <ul>
                     <li>
-                        <a href="../../index.html" target="_blank">Inicio</a>
+                        <a href="../../index.html">Inicio</a>
                     </li>
                     <li>
                         <a href="#">Categorías</a>
