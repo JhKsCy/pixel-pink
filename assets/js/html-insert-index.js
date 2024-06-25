@@ -108,3 +108,4 @@ function addHTML() {
     footer.innerHTML = contentHTML;
 }
 document.addEventListener("DOMContentLoaded", addHTML);
+

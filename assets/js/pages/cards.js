@@ -134,7 +134,7 @@ function addHTMLClothesTitle() {
                 ${parsedItem.title}
             </h2>
             <p>
-                ${parsedItem.price}
+                $${parsedItem.price}
             </p>
         `;
         while (div.firstChild) {
